@@ -4,7 +4,8 @@
 public class HelloJava {
 
     public static void main(String[] args) {
-        System.out.println("Hellooooooooo Austin!!");
+        System.out.println("Hello Austin!!");
+        System.out.println("HOWDY");
     }
 
 }
