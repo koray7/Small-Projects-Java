@@ -36,9 +36,11 @@ public class AppleStore {
         numOfCustomers++;
         profit += price*200;
 
+        int roundedProfit = (int)profit;
+        
         System.out.println("'" + numOfApples + "' Apple left in the store.");
         System.out.println("'" + numOfCustomers + "' Customer visited the store.");
-        System.out.println("'$" + profit + "' dollars made in the store for today. We'll sell more tomorrow!");
+        System.out.println("'$" + roundedProfit + "' dollars made in the store for today. We'll sell more tomorrow!");
 
     }
 }
