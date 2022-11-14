@@ -19,7 +19,7 @@ public class ChatBot {
         System.out.println("\nSo you're " + age + ", cool! I'm 400 years old.");
         System.out.println("This means I'm " + (400/age) + " times older than you.");
         
-        System.out.println("\nEnough about me. What's your favorite language? (Please don't say Python 😅)");
+        System.out.println("Enough about me. What's your favorite language? (Please don't say Python 😅)");
         scan.nextLine();
         String language = scan.nextLine();
         
