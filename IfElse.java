@@ -18,7 +18,7 @@ public class IfElse {
         } else {
             System.out.println("Sorry, I only have " + wallet + " left");
         }
-        wallet -= 5.99;
+        wallet -= toyCar;
         // System.out.println(wallet);
 
         double nike = 95.99;
