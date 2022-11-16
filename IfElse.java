@@ -22,7 +22,7 @@ public class IfElse {
         // System.out.println(wallet);
 
         double nike = 95.99;
-        System.out.println("Can I get these nike shoes?");
+        System.out.println("\nCan I get these nike shoes?");
         if (wallet > nike) {
             System.out.println("Sure!");
         } else {
