@@ -23,7 +23,7 @@ public class RoyalBank {
         String name = scan.nextLine();
 
         if (savings >= 10000 && debt < 5000 & years > 2) {
-            System.out.println("Congratulations " + name + ", you have been approved!");
+            System.out.println("\nCongratulations " + name + ", you have been approved!");
         } else {
             System.out.println("Sorry, you are not eligible for a mortgage");
         }
