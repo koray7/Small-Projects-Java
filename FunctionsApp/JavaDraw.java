@@ -11,14 +11,76 @@ public class JavaDraw {
         int option = scan.nextInt();
         switch(option){
         case 1:
-            System.out.println("Butterfly"); break;
+        System.out.println("  .==-.                   .-==.     ");
+        System.out.println("   \\()8`-._  `.   .'  _.-'8()/     ");
+        System.out.println("   (88\"   ::.  \\./  .::   \"88)     ");
+        System.out.println("    \\_.'`-::::.(#).::::-'`._/      ");
+        System.out.println("      `._... .q(_)p. ..._.'         ");
+        System.out.println("        \"\"-..-'|=|`-..-\"\"       ");
+        System.out.println("        .\"\"' .'|=|`. `\"\".       ");
+        System.out.println("      ,':8(o)./|=|\\.(o)8:`.        ");
+        System.out.println("     (O :8 ::/ \\_/ \\:: 8: O)      ");
+        System.out.println("      \\O `::/       \\::' O/       ");
+        System.out.println("       \"\"--'         `--\"\"   "); break;
         case 2:
-            System.out.println("elephant"); break;
+        System.out.println("       _..--\"\"-.                  .-\"\"--.._ ");
+        System.out.println("   _.-'         \\ __...----...__ /         '-._");
+        System.out.println(" .'      .:::...,'              ',...:::.      '.");
+        System.out.println("(     .'``'''::;                  ;::'''``'.     )");
+        System.out.println(" \\             '-)              (-'             /");
+        System.out.println("  \\             /                \\             /");
+        System.out.println("   \\          .'.-.            .-.'.          /");
+        System.out.println("    \\         | \\0|            |0/ |         /");
+        System.out.println("    |          \\  |   .-==-.   |  /          |");
+        System.out.println("     \\          `/`;          ;`\\`          /");
+        System.out.println("      '.._      (_ |  .-==-.  | _)      _..'");
+        System.out.println("          `\"`\"-`/ `/'        '\\` \\`-\"`\"`");
+        System.out.println("               / /`;   .==.   ;`\\ \\");
+        System.out.println("         .---./_/   \\  .==.  /   \\ \\");
+        System.out.println("        / '.    `-.__)       |    `\"");
+        System.out.println("       | =(`-.        '==.   ;");
+        System.out.println("        \\  '. `-.           /");
+        System.out.println("         \\_:_)   `\"--.....-'"); break;
         case 3:
-            System.out.println("Bear"); break;
+        System.out.println("            ___   .--. ");
+        System.out.println("      .--.-\"   \"-' .- |");
+        System.out.println("     / .-,`          .'");
+        System.out.println("     \\   `           \\");
+        System.out.println("      '.            ! \\");
+        System.out.println("        |     !  .--.  |");
+        System.out.println("        \\        '--'  /.____");
+        System.out.println("       /`-.     \\__,'.'      `\\");
+        System.out.println("    __/   \\`-.____.-' `\\      /");
+        System.out.println("    | `---`'-'._/-`     \\----'    _");
+        System.out.println("    |,-'`  /             |    _.-' `\\");
+        System.out.println("   .'     /              |--'`     / |");
+        System.out.println("  /      /\\              `         | |");
+        System.out.println("  |   .\\/  \\      .--. __          \\ |");
+        System.out.println("   '-'      '._       /  `\\         /");
+        System.out.println("               `\\    '     |------'`");
+        System.out.println("                 \\  |      |");
+        System.out.println("                  \\        /");
+        System.out.println("                   '._  _.'");
+        System.out.println("                      ``"); break;
         case 4:
-            System.out.println("Snake"); break;
+        System.out.println("         ,,'6''-,.");
+        System.out.println("        <====,.;;--.");
+        System.out.println("        _`---===. \"\"\"==__");
+        System.out.println("      //\"\"@@-\\===\\@@@@ \"\"\\\\");
+        System.out.println("     |( @@@  |===|  @@@  ||");
+        System.out.println("      \\\\ @@   |===|  @@  //");
+        System.out.println("        \\\\ @@ |===|@@@ //");
+        System.out.println("         \\\\  |===|  //");
+        System.out.println("___________\\\\|===| //_____,----\"\"\"\"\"\"\"\"\"\"-----,_");
+        System.out.println("  \"\"\"\"---,__`\\===`/ _________,---------,____    `,");
+        System.out.println("             |==||                           `\\   \\");
+        System.out.println("            |==| |                             )   |");
+        System.out.println("           |==| |       _____         ______,--'   '");
+        System.out.println("           |=|  `----\"\"\"     `\"\"\"\"\"\"\"\"         _,-'");
+        System.out.println("            `=\\     __,---\"\"\"-------------\"\"\"''");
+        System.out.println("                \"\"\"\"		"); break;
         default: 
             System.out.println("It's not an option"); break;
-    }
-}  } 
+        }
+    }  
+}
