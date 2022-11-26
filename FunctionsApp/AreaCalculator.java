@@ -7,6 +7,7 @@ public class AreaCalculator {
         System.out.println("Which calculator do you want to use?");
         System.out.println("\nPress '1' for Area of Square");
         System.out.println("Press '2' for Area of Rectangle");
+        System.out.println("Press '3' for Area of Triangle");
         int option = scan.nextInt();
 
             if(option == 1) {
@@ -19,7 +20,13 @@ public class AreaCalculator {
                 double length = scan.nextDouble();
                 double width = scan.nextDouble();
                 double result = length*width;
-                System.out.println("Are of Rectangle is " + result);
+                System.out.println("Area of Rectangle is " + result);
+        } else if(option == 3) {
+            System.out.println("Enter the 'base' and 'height' of triangle in same line");
+            double base = scan.nextDouble();
+            double height = scan.nextDouble();
+            double result = (base * height)/2;
+            System.out.println("Area of Triangle is: " + result);
         }
     }
 }
