@@ -8,6 +8,7 @@ public class AreaCalculator {
         System.out.println("\nPress '1' for Area of Square");
         System.out.println("Press '2' for Area of Rectangle");
         System.out.println("Press '3' for Area of Triangle");
+        System.out.println("Press '4' for Area of Circle");
         int option = scan.nextInt();
 
             if(option == 1) {
@@ -27,6 +28,11 @@ public class AreaCalculator {
             double height = scan.nextDouble();
             double result = (base * height)/2;
             System.out.println("Area of Triangle is: " + result);
+        } else if (option == 4) {
+            System.out.println("Enter the radius of Circle: ");
+            double radius = scan.nextDouble();
+            double result = Math.PI*(radius*radius);
+            System.out.println("Area of Circle is: " + result);
         }
     }
 }
