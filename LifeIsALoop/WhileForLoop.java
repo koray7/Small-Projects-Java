@@ -66,7 +66,6 @@ public class WhileForLoop{
         }
             System.out.println("You rolled doubles.");
         }
-
         public static int rollDice() {
             double randomDecimal = Math.random() * 6;
             randomDecimal += 1;
