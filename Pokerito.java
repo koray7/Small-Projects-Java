@@ -57,7 +57,7 @@ public class Pokerito {
         randomNum += 1;
         int randomInt = (int)randomNum;
 
-        switch (randomInt) {
+        switch(randomInt) {
             case 1: return  "   _____\n"+
                             "  |A _  |\n"+ 
                             "  | ( ) |\n"+
