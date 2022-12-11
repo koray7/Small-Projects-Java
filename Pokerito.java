@@ -3,9 +3,36 @@ import java.util.Scanner;
 public class Pokerito {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        System.out.println(randomCard());
-    }
+        System.out.println("Let's play Pokerito. Type anything when you're ready.");
+        scan.nextLine();
+        System.out.println("It's like Poker, but a lot simpler.\n");
+        System.out.println("- There are two players, you and the computer.");
+        System.out.println("- The dealer will give each player one card.");
+        System.out.println("- Then, the dealer will draw five cards (the river)");
+        System.out.println("- The player with the most river matches wins!");
+        System.out.println("- If the matches are equal, everyone's a winner!\n");
+        System.out.println("- Ready? Type anything if you are.");
+        scan.nextLine();
 
+        String computerCard = randomCard();
+        String yourCard = randomCard();
+
+        int yourMatches = 0;
+        int computerMatches = 0;
+
+        System.out.println("Here is your card: \n");
+        System.out.println(yourCard);
+        System.out.println("Here's the computer's card: \n");
+        System.out.println(computerCard);
+
+        System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
+        for (int i = 1; i<=5; i++){
+            scan.nextLine();
+            String draw = randomCard();
+            System.out.println("Card: " + i);
+            System.out.println(draw);
+        }
+    }
 
         public static String randomCard() {
         double randomNum = Math.random() * 13;
