@@ -25,7 +25,46 @@ public class BlackJack {
         System.out.println("\n The dealer shows \n" + cardString(dealerCard1) + "\n and has a card facing down \n" + faceDown());
         int dealerTotal = Math.min(dealerCard1, 10) + Math.min(dealerCard2, 10);
         System.out.println("\nThe dealer's total is hidden");
-        String option = hitOrStay();
+
+        while(true) {
+            String option = hitOrStay();
+
+            if(option.equalsIgnoreCase("stay")) {
+                break;
+            }
+
+            int newCard = drawRandomCard();
+            total += Math.min(newCard, 10);
+            System.out.println("\n You get a \n" + cardString(newCard));
+            System.out.println("your total is: " + total);
+
+            if(total > 21) {
+                System.err.println("Bust! Player loses");
+                System.exit(0);
+            }
+        }
+        System.out.println("\nDealer's turn");
+        System.out.println("\n The dealer's cards are \n" + cardString(dealerCard1) + "\n and a \n" + cardString(dealerCard2));
+        System.out.println("Dealer's total is: " + dealerTotal);
+
+        while (dealerTotal < 17) {
+            int newCard = drawRandomCard();
+
+            dealerTotal += Math.min(newCard, 10);
+            System.out.println("\n Dealer gets a \n" + cardString(newCard));
+            System.out.println("Dealer's total is: " + dealerTotal);
+        }
+        if (dealerTotal > 21) {
+            System.out.println("Bust! Dealer loses.");
+            System.exit(0);
+        }
+        if (total > dealerTotal) {
+            System.out.println("Player wins!");
+        } else {
+            System.out.println("Dealer wins!");
+        }
+        
+            scan.close();
     }
 
     public static int drawRandomCard() {
