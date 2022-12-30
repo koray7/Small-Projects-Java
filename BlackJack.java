@@ -16,7 +16,16 @@ public class BlackJack {
         int card2 = drawRandomCard();
 
         System.out.println("\n You get a \n" + cardString(card1) + "\n and a \n" + cardString(card2));
-        
+        int total = Math.min(card1, 10) + Math.min(card2, 10);
+        System.out.println("Your total is: " + total);
+
+        int dealerCard1 = drawRandomCard();
+        int dealerCard2 = drawRandomCard();
+
+        System.out.println("\n The dealer shows \n" + cardString(dealerCard1) + "\n and has a card facing down \n" + faceDown());
+        int dealerTotal = Math.min(dealerCard1, 10) + Math.min(dealerCard2, 10);
+        System.out.println("\nThe dealer's total is hidden");
+        String option = hitOrStay();
     }
 
     public static int drawRandomCard() {
@@ -120,5 +129,25 @@ public class BlackJack {
                     "  |_%%%>|\n";
             default: return "Not possible";
         }
+    }
+
+    public static String faceDown() {
+        return
+        "   _____\n"+
+        "  |     |\n"+ 
+        "  |  J  |\n"+
+        "  | JJJ |\n"+
+        "  |  J  |\n"+
+        "  |_____|\n";
+    }
+
+        public static String hitOrStay() {
+        System.out.println("Would you like to hit or stay?");
+        String response = scan.nextLine();
+        while (!(response.equalsIgnoreCase("hit") || response.equalsIgnoreCase("stay"))) {
+            System.out.println("Please write 'Hit' or 'Stay' ");
+            response = scan.nextLine();
+        }
+        return response;
     }
 }
