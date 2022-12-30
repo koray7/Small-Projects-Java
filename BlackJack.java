@@ -29,14 +29,14 @@ public class BlackJack {
         while(true) {
             String option = hitOrStay();
 
-            if(option.equalsIgnoreCase("stay")) {
+            if(option.equalsIgnoreCase("Stay")) {
                 break;
             }
 
             int newCard = drawRandomCard();
             total += Math.min(newCard, 10);
             System.out.println("\n You get a \n" + cardString(newCard));
-            System.out.println("your total is: " + total);
+            System.out.println("Your total is: " + total);
 
             if(total > 21) {
                 System.err.println("Bust! Player loses");
