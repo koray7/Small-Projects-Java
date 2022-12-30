@@ -5,7 +5,6 @@ public class BlackJack {
     public static Scanner scan = new Scanner(System.in);
     public static void main(String[] args){
 
-        // System.out.println(drawRandomCard());
         System.out.println("\nWelcome to Java Casino!");
         System.out.println("Do you have a knack for Black Jack?");
         System.out.println("We shall see..");
