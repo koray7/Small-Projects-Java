@@ -9,7 +9,7 @@ public class BlackJack {
         System.out.println("\nWelcome to Java Casino!");
         System.out.println("Do you have a knack for Black Jack?");
         System.out.println("We shall see..");
-        System.out.println("..Ready? Press anything to begin!");
+        System.out.println("..Ready? Press 'Enter' to begin!");
         scan.nextLine();
 
         int card1 = drawRandomCard();
