@@ -38,7 +38,7 @@ public class BlackJack {
             System.out.println("Your total is: " + total);
 
             if(total > 21) {
-                System.err.println("Bust! Player loses");
+                System.out.println("Bust! Player loses");
                 System.exit(0);
             }
         }
