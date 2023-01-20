@@ -5,8 +5,6 @@ public class Weather {
         
         printTemperatures(celsius, "Celsius");
         printTemperatures(fahrenheit, "Fahrenheit");
-        
-        // System.out.println(Arrays.toString(fahrenheit));
     }
     public static double[] celciusToFahrenheit(double[] celsius) {
         double[] fahrenheit = new double[celsius.length];
