@@ -25,11 +25,12 @@ public class Javapedia {
         print2DArray(database);
         System.out.println("\nWho do you want information on? ");
     }
-        // Created a function that stores the values
+        // Created a function that stores the values and adding space between the information
     public static void print2DArray(String[][] array){
         for (int i = 0; i < array.length; i++) {
+            System.out.print("\t");
             for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j]);
+                System.out.print(array[i][j] + " ");
             }
             System.out.print("\n");
         }
