@@ -23,7 +23,7 @@ public class Javapedia {
         }
         System.out.println("These are the values you stored: ");
         print2DArray(database);
-        System.out.println("\nWho do you want information on? ");
+        System.out.print("\nWho do you want information on? ");
     }
         // Created a function that stores the values and adding space between the information
     public static void print2DArray(String[][] array){
