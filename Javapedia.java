@@ -21,9 +21,19 @@ public class Javapedia {
             database[i][2] = scan.nextLine();
             System.out.print("\n");
         }
-        System.out.println("These are the values you stored: ");
+        System.out.println("These are the values you stored: \n ");
         print2DArray(database);
         System.out.print("\nWho do you want information on? ");
+        String name = scan.nextLine();
+        System.out.print("\n");
+
+        for(int i = 0; i < database.length; i++){
+            if(database[i][0].equals(name)) {
+                System.out.println("\tName: " + database[i][0]);
+                System.out.println("\tDate of birth: " + database[i][1]);
+                System.out.println("\tOccupation: " + database[i][2]);
+            }
+        }
     }
         // Created a function that stores the values and adding space between the information
     public static void print2DArray(String[][] array){
