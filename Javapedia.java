@@ -27,6 +27,7 @@ public class Javapedia {
         String name = scan.nextLine();
         System.out.print("\n");
 
+        // Function that runs the database and if user input matches with database, it would show the information about that specific data.
         for(int i = 0; i < database.length; i++){
             if(database[i][0].equals(name)) {
                 System.out.println("\tName: " + database[i][0]);
